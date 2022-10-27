@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="main" role="main">
+      <div class="left">
+        <div class="heading-section">
+          <h2 class="heading">Learn to code by</h2>
+          <h2 class="heading">watching others</h2>
+        </div>
+        <p class="content">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="upper-section">
+          <b>Try it free 7 days </b>then $20/mo. thereafter
+        </div>
+        <div class="form">
+          <form action="/">
+            <div class="first-name inputs">
+              <div class="input-box">
+                <input
+                  pattern="[A-Za-z]{2,}"
+                  type="text"
+                  class="first"
+                  placeholder="First Name"
+                />
+                <span class="error-img"
+                  ><img src="./icon.error.svg" alt=""
+                /></span>
+              </div>
+              <p class="error-msg">first name cannot be empty</p>
+            </div>
+            <div class="last-name inputs">
+              <div class="input-box">
+                <input
+                  pattern="[A-Za-z]{2,}"
+                  type="text"
+                  class="last"
+                  placeholder="Last Name"
+                />
+                <span class="error-img"
+                  ><img src="./icon.error.svg" alt=""
+                /></span>
+              </div>
+              <p class="error-msg">last name cannot be empty</p>
+            </div>
+            <div class="email inputs">
+              <div class="input-box">
+                <input
+                  pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,12}"
+                  type="text"
+                  class="email"
+                  placeholder="Email Address"
+                />
+                <span class="error-img"
+                  ><img src="./icon.error.svg" alt=""
+                /></span>
+              </div>
+              <p class="error-msg">Looks like this is not an email</p>
+            </div>
+            <div class="password inputs">
+              <div class="input-box">
+                <input
+                  pattern="([A-Z]{2,})+([0-9]{2,6})+([a-z]{2,})"
+                  type="password"
+                  class="password"
+                  placeholder="Password"
+                />
+                <span class="error-img"
+                  ><img src="./icon.error.svg" alt=""
+                /></span>
+              </div>
+              <p class="error-msg">Password cannot be empty</p>
+            </div>
+            <button class="btn">claim your free trial</button>
+            <p class="copyright">
+              By clicking the button, you are agreeing to our
+              <span class="span"> Terms and Services</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
